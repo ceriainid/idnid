@@ -9,7 +9,7 @@
             "value": "eastus"
         },
         "subnetId": {
-            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid/subnets/vnetPbl"
+            "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid/subnets/vnetPbl"
         },
         "privateIPAllocationMethod": {
             "value": "Static"
@@ -18,7 +18,7 @@
             "value": "10.0.0.12"
         },
         "networkSecurityGroupId": {
-            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
+            "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
         }
     }
 }

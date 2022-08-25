@@ -12,7 +12,7 @@
             "value": false
         },
         "networkSecurityGroupId": {
-            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
+            "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
         },
         "subnetName": {
             "value": "vnetPbl"
@@ -21,10 +21,10 @@
             "value" : "10.0.0.13"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid"
+            "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid"
         },
         "publicIpAddressId": {
-            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/publicIPAddresses/pipubt16a"
+            "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/publicIPAddresses/pipubt16a"
         },
         "pipDeleteOption": {
             "value": "Delete"
