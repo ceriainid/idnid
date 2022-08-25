@@ -1,9 +1,0 @@
-[user]
-email = ceriain.id@gmail.com
-name = Ceriain Id
-
-[github]
-user = ceriainid
-
-[core]
-sshCommand = "ssh -i '/Users/rian/OneDrive/Cloud Engineer/github/github-idnid/ssh/id_rsa'"
