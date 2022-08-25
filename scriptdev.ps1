@@ -30,8 +30,8 @@ if($check -eq $null){
 	New-AzResourceGroupDeployment `
 	  -Name remoteTemplateDeployment `
 	  -ResourceGroupName $newrg `
-	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vnet.json" `
-	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vneta.json"
+	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vnet.json" `
+	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vneta.json"
 }
 
 else{
@@ -51,8 +51,8 @@ if($check -eq $null){
 New-AzResourceGroupDeployment `
   -Name remoteTemplateDeployment `
   -ResourceGroupName $newrg `
-  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/nsg.json" `
-  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/nsgPbl.json"
+  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/nsg.json" `
+  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/nsgPbl.json"
   
 }
 
@@ -73,8 +73,8 @@ if($check -eq $null){
 	New-AzResourceGroupDeployment `
 	  -Name remoteTemplateDeployment `
 	  -ResourceGroupName $newrg `
-	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/pip.json" `
-	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/pipubt16a.json"
+	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/pip.json" `
+	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/pipubt16a.json"
 	  
 }
 
@@ -95,8 +95,8 @@ if($check -eq $null){
 	New-AzResourceGroupDeployment `
 	  -Name remoteTemplateDeployment `
 	  -ResourceGroupName $newrg `
-	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vnic.json" `
-	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vnicubt16a.json"
+	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vnic.json" `
+	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vnicubt16a.json"
 	  
 }
 
@@ -117,8 +117,8 @@ if($check -eq $null){
 	New-AzResourceGroupDeployment `
 	  -Name remoteTemplateDeployment `
 	  -ResourceGroupName $newrg `
-	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vmubt16.json" `
-	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/vmubt16a.json"
+	  -TemplateUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vmubt16.json" `
+	  -TemplateParameterUri "https://raw.githubusercontent.com/ceriainid/idnid/master/vmubt16a.json"
 	  
 }
 
@@ -132,7 +132,7 @@ Write-Output `n "===============================================================
 Write-Output    "================================   Configuration SSH  ================================" 
 Write-Output    "======================================================================================" `n
 
-$script = Invoke-WebRequest "https://raw.githubusercontent.com/ceriainid/idnid/master/idnid/scriptconfnsg.ps1"
+$script = Invoke-WebRequest "https://raw.githubusercontent.com/ceriainid/idnid/master/scriptconfnsg.ps1"
 Invoke-Expression $($script.Content)
 
 Write-Output `n "======================================================================================" 
