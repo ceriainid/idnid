@@ -1,0 +1,52 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkInterfaceName": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "subnetId": {
+            "type": "string"
+        },
+        "privateIPAllocationMethod": {
+            "type": "string"
+        },
+        "privateIPv4Address": {
+            "type": "string"
+        },
+        "networkSecurityGroupId": {
+            "type": "string"
+        }
+    },
+    "resources": [
+        {
+            "name": "[parameters('networkInterfaceName')]",
+            "type": "Microsoft.Network/networkInterfaces",
+            "apiVersion": "2021-08-01",
+            "location": "[parameters('location')]",
+            "dependsOn": [],
+            "properties": {
+                "ipConfigurations": [
+                    {
+                        "name": "Ipv4config",
+                        "properties": {
+                            "privateIpAddressVersion": "IPv4",
+                            "privateIPAllocationMethod": "[parameters('privateIPAllocationMethod')]",
+                            "subnet": {
+                                "id": "[parameters('subnetId')]"
+                            },
+                            "privateIPAddress": "[parameters('privateIPv4Address')]"
+                        }
+                    }
+                ],
+                "networkSecurityGroup": {
+                    "id": "[parameters('networkSecurityGroupId')]"
+                }
+            },
+            "tags": {}
+        }
+    ]
+}

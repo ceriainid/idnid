@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName": {
+            "value": "vnicubt16a"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
+        },
+        "subnetName": {
+            "value": "vnetPbl"
+        },
+        "privateIPAddress": {
+            "value" : "10.0.0.13"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid"
+        },
+        "publicIpAddressId": {
+            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/publicIPAddresses/pipubt16a"
+        },
+        "pipDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineName": {
+            "value": "vmubt16a"
+        },
+        "virtualMachineComputerName": {
+            "value": "vmubt16a"
+        },
+        "virtualMachineRG": {
+            "value": "idnid"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "adminUsername": {
+            "value": "local"
+        },
+        "adminPassword": {
+            "value": "Jakarta@2022"
+        },
+        "patchMode": {
+            "value": "Manual"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "SE Asia Standard Time"
+        }
+    }
+}

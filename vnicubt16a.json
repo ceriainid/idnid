@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkInterfaceName": {
+            "value": "vnicubt16a"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "subnetId": {
+            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/virtualNetworks/vnetidnid/subnets/vnetPbl"
+        },
+        "privateIPAllocationMethod": {
+            "value": "Static"
+        },
+        "privateIPv4Address": {
+            "value": "10.0.0.12"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/d5962836-72b3-4d83-a46f-d849ecc1cdd7/resourceGroups/idnid/providers/Microsoft.Network/networkSecurityGroups/nsgPbl"
+        }
+    }
+}
