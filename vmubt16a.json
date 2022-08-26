@@ -27,7 +27,7 @@
             "value": "/subscriptions/411a3a82-52c3-477a-a776-6b8c95cc8f93/resourceGroups/idnid/providers/Microsoft.Network/publicIPAddresses/pipubt16a"
         },
         "pipDeleteOption": {
-            "value": "Delete"
+            "value": "Detach"
         },
         "virtualMachineName": {
             "value": "vmubt16a"
